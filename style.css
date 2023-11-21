@@ -78,6 +78,11 @@ html , body {
     letter-spacing: -.08vw;
     
 }
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+
 
 #homeLast p::selection{
     color: #fff;
@@ -88,14 +93,99 @@ html , body {
     padding: 10vw 15vw;
 }
 
-#featutred h1{
+.heading>h1{
     font-size: 4vw;
     line-height: 1;
     font-weight: 400;
 }
 
-#featutred h1:nth-child(2){
+.heading>h1:nth-child(2){
     color: transparent;
     -webkit-text-stroke: 1px #000;
 }
+#featuerImages{  
+    display: flex;
+    justify-content: space-between;  
+    width: 100%;
+    height: 150vh; 
+    margin-top: 5vw;
+    
+}
 
+#fleft{
+    overflow-y: hidden;
+    width: 45%;
+    height: inherit;
+ 
+}
+#fright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+    height: inherit;
+
+}
+#fright .images{
+    width: 90% ;
+    height: 80%;
+    background-color: red;
+}
+
+.fleftLm{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: inherit;
+}
+
+.fleftLm h1{
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin:  2vw 0;
+}
+.fleftLm h3{
+    font-size: 1.3vw ;
+    font-weight: 300;
+}
+
+.fleftLm h4{
+    opacity: .5;
+}
+#btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btnDiv button{
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    border: 2px solid #7c7c7c;
+    background-color: #fff;
+    font-size: 1vw;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+
+#dev h1{
+    font-size: 3.8vw;
+    font-weight: 400;
+    width: 60%;
+    line-height: 1;
+}
+
+#dev p{
+    font-size: 1.5vw ;
+    margin-top: 3vw;
+    letter-spacing: -.5px;
+    width: 60%;
+}
